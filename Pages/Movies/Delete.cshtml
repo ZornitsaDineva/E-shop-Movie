@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @model E_shop_Movie.Pages.Movies.DeleteModel
 
 @{
@@ -32,12 +32,14 @@
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Movie.Price)
+            <span class="input-group-addon">лв.</span>
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.Price)
+            <span class="input-group-addon">лв.</span>
         </dd>
     </dl>
-    
+
     <form method="post">
         <input type="hidden" asp-for="Movie.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
