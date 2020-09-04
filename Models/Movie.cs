@@ -17,6 +17,7 @@ namespace E_shop_Movie.Models
         public string Genre { get; set; }
 
         [Column(TypeName = "decimal(18, 2)")]
-        public decimal Price { get; set; }
+        [DataType(DataType.Currency)]
+       public decimal Price { get; set; }
     }
 }
