@@ -18,6 +18,7 @@ namespace E_shop_Movie.Models
 
         [Column(TypeName = "decimal(18, 2)")]
         [DataType(DataType.Currency)]
-       public decimal Price { get; set; }
+        public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }
