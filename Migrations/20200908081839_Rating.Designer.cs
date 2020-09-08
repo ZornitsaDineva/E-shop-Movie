@@ -4,14 +4,16 @@ using E_shop_Movie.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace E_shop_Movie.Migrations
 {
     [DbContext(typeof(E_shop_MovieContext))]
-    partial class E_shop_MovieContextModelSnapshot : ModelSnapshot
+    [Migration("20200908081839_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
