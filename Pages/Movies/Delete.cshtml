@@ -32,7 +32,6 @@
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Movie.Price)
-            <span class="input-group-addon">лв.</span>
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.Price)
@@ -42,6 +41,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.Rating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.FileContent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.FileContent)
         </dd>
     </dl>
 

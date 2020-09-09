@@ -35,8 +35,10 @@ namespace E_shop_Movie.Models
         [Required]
         public string Rating { get; set; }
 
-        [Column(TypeName = "varbinary")]
-        [DisplayName("File Content")]
-        public byte[] FileContent { get; set; }
+
+        [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
+        [StringLength(50)]
+        [Required]
+        public string FileContent { get; set; }
     }
 }

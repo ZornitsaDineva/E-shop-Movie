@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,6 +22,7 @@ namespace E_shop_Movie.Models
                 return;   // DB has been seeded
             }
 
+            
             context.Movie.AddRange(
                 new Movie
                 {
@@ -28,7 +30,9 @@ namespace E_shop_Movie.Models
                     ReleaseDate = DateTime.Parse("1989-2-12"),
                     Genre = "Romantic Comedy",
                     Price = 7,
-                    Rating = "R"
+                    Rating = "G",
+                    FileContent = "21.0MB /MP4 File (.mp4)"
+
 
                 },
 
@@ -38,7 +42,8 @@ namespace E_shop_Movie.Models
                     ReleaseDate = DateTime.Parse("1984-3-13"),
                     Genre = "Comedy",
                     Price = 8,
-                    Rating = "R"
+                    Rating = "G",
+                    FileContent = "11.7 MB/MP4 File (.mp4)"
                 },
 
                 new Movie
@@ -47,7 +52,8 @@ namespace E_shop_Movie.Models
                     ReleaseDate = DateTime.Parse("1986-2-23"),
                     Genre = "Comedy",
                     Price = 9,
-                    Rating = "R"
+                    Rating = "G",
+                    FileContent = "24.4 MB/MP4 File (.mp4)"
                 },
 
                 new Movie
@@ -56,7 +62,8 @@ namespace E_shop_Movie.Models
                     ReleaseDate = DateTime.Parse("1959-4-15"),
                     Genre = "Western",
                     Price = 3,
-                    Rating = "R"
+                    Rating = "NC",
+                    FileContent = "5.86 MB/MP4 File (.mp4)"
                 }
             );
             context.SaveChanges();
