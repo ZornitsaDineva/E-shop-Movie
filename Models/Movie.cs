@@ -40,5 +40,13 @@ namespace E_shop_Movie.Models
         [StringLength(50)]
         [Required]
         public string FileContent { get; set; }
-    }
+
+        [StringLength(6000, MinimumLength = 3)]
+        [Required]
+        public string Description { get; set; }
+
+        [StringLength(100)]
+        [Required]
+        public string Image { get; set; }
+    } 
 }

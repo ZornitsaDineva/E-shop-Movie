@@ -1,4 +1,5 @@
-﻿@page  
+﻿@page
+
 @model E_shop_Movie.Pages.Movies.DetailsModel
 
 @{
@@ -50,6 +51,11 @@
         </dd>
     </dl>
 </div>
+<h2><b>@Html.DisplayFor(model => model.Movie.Title)</b></h2>
+<p>@Html.DisplayFor(model => model.Movie.Description)</p>
+<img src="/images/@Html.DisplayFor(model => model.Movie.Image)"/>
+<br />
+<br />
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Movie.ID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
