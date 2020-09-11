@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using E_shop_Movie.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using E_shop_Movie.Services;
 
 namespace E_shop_Movie
 {
@@ -26,6 +29,19 @@ namespace E_shop_Movie
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //services.AddIdentity<IdentityUser, IdentityRole>();
+            // services.AddDefaultIdentity<IdentityUser>()
+         
+           
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = $"/Identity/Account/Login";
+                options.LogoutPath = $"/Identity/Account/Logout";
+                options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+            });
+
+            // using Microsoft.AspNetCore.Identity.UI.Services;
+            services.AddSingleton<IEmailSender, EmailSender>();
 
             services.AddDbContext<E_shop_MovieContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("E_shop_MovieContext")));
@@ -37,6 +53,7 @@ namespace E_shop_Movie
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
             else
             {
@@ -50,6 +67,7 @@ namespace E_shop_Movie
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

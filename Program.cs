@@ -28,6 +28,7 @@ namespace E_shop_Movie
                     var context = services.
                         GetRequiredService<Data.E_shop_MovieContext>();
                     context.Database.Migrate();
+
                     SeedData.Initialize(services);
                 }
                 catch (Exception ex)

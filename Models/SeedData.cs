@@ -33,7 +33,7 @@ namespace E_shop_Movie.Models
                     Rating = "G",
                     FileContent = "21.0MB /MP4 File (.mp4)",
                     Description= "When posed the film’s central question, can men and women just be friends, Meg Ryan replied, “Yes, men and women can just be friends. I have a lot of platonic (male) friends, and sex doesn’t get in the way.” Billy Crystal said, “I’m a little more optimistic than Harry. But I think it is difficult. Men basically act like stray dogs in front of a supermarket. I do have platonic (women) friends, but not best, best, best friends.”",
-                    Image="When Harry met Saly.png"
+                    Image="Saly met Harry"
                 },
 
                 new Movie
@@ -45,7 +45,7 @@ namespace E_shop_Movie.Models
                     Rating = "G",
                     FileContent = "11.7 MB/MP4 File (.mp4)",
                     Description= "Peter Venkman, Ray Stantz and Egon Spengler work at Columbia University. where they delve into the paranormal and fiddle with many unethical experiments on their students. As they are kicked out of the University, they really understand the paranormal and go into business for themselves. Under the new snazzy business name of 'Ghostbusters', and living in the old firehouse building they work out of, they are called to rid New York City of paranormal phenomenon at everyone's whim. - for a price. ",
-                    Image="Ghostbusters.jpg"
+                    Image="Ghostbuster.png"
                 },
 
                 new Movie
