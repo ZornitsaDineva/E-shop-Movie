@@ -205,7 +205,46 @@ namespace E_shop_Movie.Migrations.E_shop_MovieUser
 
             migrationBuilder.DropTable(
                 name: "AspNetUserRoles");
-
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 Namespace=E_shop_Movie.Migrations.E_shop_MovieUser Type=CreateIdentitySchema Member=(Name=BuildTargetModel OverloadingParameters=[(@2 Namespace=Microsoft.EntityFrameworkCore Type=ModelBuilder)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" CommonLabel="BuildTargetModel" Icon="Microsoft.VisualStudio.Method.Protected" IsDragSource="True" IsOverloaded="True" Label="BuildTargetModel(ModelBuilder) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/admin/Desktop/.Net/E-shop Movie/Migrations/E_shop_MovieUser/20200911075834_CreateIdentitySchema.Designer.cs&quot; StartLineNumber=15 StartCharacterOffset=32 EndLineNumber=15 EndCharacterOffset=48)" />
+    <Node Id="(@1 Namespace=E_shop_Movie.Migrations.E_shop_MovieUser Type=CreateIdentitySchema)" Visibility="Hidden" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 Namespace=E_shop_Movie.Migrations.E_shop_MovieUser Type=CreateIdentitySchema)" Target="(@1 Namespace=E_shop_Movie.Migrations.E_shop_MovieUser Type=CreateIdentitySchema Member=(Name=BuildTargetModel OverloadingParameters=[(@2 Namespace=Microsoft.EntityFrameworkCore Type=ModelBuilder)]))" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Member" Label="Member" Icon="CodeSchema_Field" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" Icon="CodeSchema_Method" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" IsContainment="True" />
+  </Categories>
+  <Properties>
+    <Property Id="CodeSchemaProperty_IsProtected" Label="Is Protected" Description="Flag to indicate the scope is Protected" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsDragSource" Label="IsDragSource" Description="IsDragSource" DataType="System.Boolean" />
+    <Property Id="IsOverloaded" Label="IsOverloaded" Description="IsOverloaded" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(5689e79a-19b9-444e-a4be-ae34e8d48bea.OutputPathUri)" />
+    <Alias n="2" Uri="Assembly=file:///C:/Users/admin/.nuget/packages/microsoft.entityframeworkcore/3.1.8/lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="5689e79a-19b9-444e-a4be-ae34e8d48bea.OutputPathUri" Value="file:///C:/Users/admin/Desktop/.Net/E-shop Movie/bin/Debug/netcoreapp3.1/E-shop Movie.dll" />
+  </Paths>
+</DirectedGraph>
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
 
