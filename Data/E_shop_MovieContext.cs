@@ -14,6 +14,9 @@ namespace E_shop_Movie.Data
         {
         }
 
-        public DbSet<E_shop_Movie.Models.Movie> Movie { get; set; }
+        public DbSet<Movie> Movie { get; set; }
+        public DbSet<Models.Category> Categories { get; set; }
+        public DbSet<Models.Product> Products { get; set; }
+        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }
